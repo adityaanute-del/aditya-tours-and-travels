@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADITYA TOUR'S AND TRAVELS | Mumbai & Dombivli</title>
+<meta name="description" content="ADITYA TOUR'S AND TRAVELS — private tours, pilgrimage journeys, weekend getaways and travel services from Mumbai and Dombivli.">
+<meta name="theme-color" content="#07111f">
+<style>
+:root{--navy:#07111f;--navy2:#0d1a2b;--gold:#d6a84f;--white:#fff;--muted:#aab4c2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;z-index:1000;top:0;width:100%;background:rgba(7,17,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px}
+.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#fff}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:24px;align-items:center}
+nav a{font-size:14px;color:#d9dee5}
+nav a:hover{color:var(--gold)}
+.book{background:var(--gold);color:#07111f;padding:11px 17px;border-radius:25px;font-weight:800}
+.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(4,10,18,.96),rgba(4,10,18,.76),rgba(4,10,18,.38)),
+url("assets/aura.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--navy))}
+.hero-content{position:relative;z-index:2;padding-top:75px;max-width:760px}
+.eyebrow{display:inline-block;color:var(--gold);border:1px solid rgba(214,168,79,.55);border-radius:30px;padding:8px 15px;font-size:12px;font-weight:800;letter-spacing:1.6px;margin-bottom:22px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin-bottom:22px}
+h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#d6dce4;max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 21px;border-radius:8px;font-weight:800}
+.primary{background:var(--gold);color:#07111f}
+.outline{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.06)}
+section{padding:88px 0}
+.heading{text-align:center;margin-bottom:42px}
+.heading small{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:800}
+.heading h2{font-size:38px;margin:6px 0}
+.heading p{color:var(--muted);max-width:650px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-body{padding:22px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:16px}
+.gold{color:var(--gold);font-weight:800}
+.dark{background:#0a1625}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feature{background:var(--navy2);padding:25px 20px;border-radius:14px;border:1px solid rgba(255,255,255,.07)}
+.feature .icon{font-size:28px;margin-bottom:10px}
+.feature h3{font-size:17px;margin-bottom:6px}
+.feature p{font-size:14px;color:var(--muted)}
+.fleet{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.vehicle{position:relative;min-height:370px;border-radius:18px;overflow:hidden;background:#111}
+.vehicle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vehicle:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.88))}
+.vehicle-info{position:absolute;z-index:2;left:25px;right:25px;bottom:23px}
+.vehicle-info h3{font-size:28px}
+.vehicle-info p{color:#ddd}
+.cta{text-align:center;background:linear-gradient(rgba(4,10,18,.87),rgba(4,10,18,.9)),url("assets/ertiga.jpg") center/cover}
+.cta h2{font-size:42px;margin-bottom:10px}
+.cta p{color:#cbd2dc;margin-bottom:25px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:var(--navy2);padding:28px;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
+.box h3{margin-bottom:16px}
+.item{margin:15px 0}
+.item small{display:block;color:#8f9aaa}
+.item a{color:var(--gold);font-weight:800}
+.faq{max-width:800px;margin:auto}
+details{background:var(--navy2);padding:18px 20px;border-radius:10px;margin:10px 0;border:1px solid rgba(255,255,255,.07)}
+summary{cursor:pointer;font-weight:800}
+details p{color:var(--muted);margin-top:10px}
+footer{text-align:center;background:#040a12;padding:30px 0;color:#7f8997;font-size:13px}
+footer strong{color:#fff}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:2000;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:25px;box-shadow:0 8px 28px rgba(0,0,0,.45)}
+@media(max-width:800px){
+ nav{display:none;position:absolute;top:74px;right:12px;flex-direction:column;align-items:stretch;background:#07111f;padding:14px;border-radius:12px;min-width:190px;border:1px solid rgba(255,255,255,.1)}
+ nav.show{display:flex}.menu{display:block}
+ .grid,.features,.fleet,.contact{grid-template-columns:1fr}
+ .hero{min-height:90vh}.hero-content{padding-top:80px}
+ h1{font-size:45px}.hero p{font-size:16px}
+ section{padding:70px 0}.heading h2{font-size:31px}.cta h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="brand" href="#home">
+<img src="assets/logo.jpg" alt="ADITYA TOUR'S AND TRAVELS logo">
+<div>ADITYA <span>TOUR'S</span> &amp; TRAVELS</div>
+</a>
+<button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav id="nav">
+<a href="#tours">Tours</a>
+<a href="#fleet">Vehicles</a>
+<a href="#why">Why Us</a>
+<a href="#faq">FAQ</a>
+<a href="#contact" class="book">Book Now</a>
+</nav>
+</div>
+</header>
+
+<main id="home">
+
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">MUMBAI • DOMBIVLI • MAHARASHTRA</div>
+<h1>Travel Better.<br>Travel With <span>ADITYA.</span></h1>
+<p>Private travel for family trips, pilgrimage journeys, weekend getaways and special occasions.</p>
+<div class="actions">
+<a class="btn primary" href="https://wa.me/918828040723?text=Hello%20ADITYA%20TOUR'S%20AND%20TRAVELS,%20I%20want%20to%20plan%20a%20trip." target="_blank" rel="noopener">Book on WhatsApp</a>
+<a class="btn outline" href="#tours">Explore Tours</a>
+</div>
+</div>
+</section>
+
+<section id="tours">
+<div class="container">
+<div class="heading">
+<small>Explore With Us</small>
+<h2>Travel Experiences</h2>
+<p>Choose a journey or contact us for a custom travel plan.</p>
+</div>
+<div class="grid">
+<article class="card">
+<img src="assets/aura.jpg" alt="ADITYA TOUR'S AND TRAVELS vehicle">
+<div class="card-body"><h3>Pilgrimage Tours</h3><p>Shirdi, Shani Shingnapur, Trimbakeshwar, Ashtavinayak and other spiritual destinations.</p><a class="gold" href="#contact">Plan Pilgrimage →</a></div>
+</article>
+<article class="card">
+<img src="assets/ertiga.jpg" alt="ADITYA TOUR'S AND TRAVELS vehicle">
+<div class="card-body"><h3>Konkan &amp; Beach Tours</h3><p>Discover coastal roads, beaches and memorable Konkan journeys.</p><a class="gold" href="#contact">Plan Konkan Trip →</a></div>
+</article>
+<article class="card">
+<img src="assets/aura.jpg" alt="Private travel vehicle">
+<div class="card-body"><h3>Weekend Getaways</h3><p>Plan private trips to destinations around Maharashtra.</p><a class="gold" href="#contact">Plan Weekend Trip →</a></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="dark" id="why">
+<div class="container">
+<div class="heading"><small>Why ADITYA</small><h2>Simple. Personal. Reliable.</h2></div>
+<div class="features">
+<div class="feature"><div class="icon">🚗</div><h3>Private Travel</h3><p>Your vehicle, your journey and your schedule.</p></div>
+<div class="feature"><div class="icon">📍</div><h3>Flexible Routes</h3><p>Build your trip around your destination and requirements.</p></div>
+<div class="feature"><div class="icon">💬</div><h3>Direct Booking</h3><p>Talk directly with us on WhatsApp or phone.</p></div>
+<div class="feature"><div class="icon">🧳</div><h3>Custom Trips</h3><p>Ask us about a travel plan built for your group.</p></div>
+</div>
+</div>
+</section>
+
+<section id="fleet">
+<div class="container">
+<div class="heading"><small>Our Vehicles</small><h2>Travel In Your Own Ride</h2><p>These are the actual vehicles supplied for this website.</p></div>
+<div class="fleet">
+<div class="vehicle"><img src="assets/aura.jpg" alt="Hyundai Aura CNG used by ADITYA TOUR'S AND TRAVELS"><div class="vehicle-info"><h3>Hyundai Aura CNG</h3><p>Comfortable private travel for smaller groups and journeys.</p></div></div>
+<div class="vehicle"><img src="assets/ertiga.jpg" alt="Maruti Suzuki Ertiga used by ADITYA TOUR'S AND TRAVELS"><div class="vehicle-info"><h3>Maruti Suzuki Ertiga</h3><p>Practical private travel for family and group journeys.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Ready For Your Next Journey?</h2>
+<p>Send your destination, travel date and number of passengers.</p>
+<a class="btn primary" href="https://wa.me/918828040723?text=Hello%20ADITYA%20TOUR'S%20AND%20TRAVELS,%20I%20want%20to%20book%20a%20trip." target="_blank" rel="noopener">Start Booking</a>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+<div class="heading"><small>FAQ</small><h2>Frequently Asked Questions</h2></div>
+<div class="faq">
+<details><summary>How can I book?</summary><p>Send your destination, travel date and number of passengers on WhatsApp or call us.</p></details>
+<details><summary>Which vehicles are available?</summary><p>Hyundai Aura CNG and Maruti Suzuki Ertiga are featured in our current fleet.</p></details>
+<details><summary>Do you provide pilgrimage trips?</summary><p>Yes. We offer private travel for destinations including Shirdi, Shani Shingnapur, Trimbakeshwar and Ashtavinayak.</p></details>
+<details><summary>Can I request a custom itinerary?</summary><p>Yes. Contact us with your destination, dates and group size.</p></details>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="heading"><small>Contact</small><h2>Let's Plan Your Journey</h2></div>
+<div class="contact">
+<div class="box">
+<h3>ADITYA TOUR'S AND TRAVELS</h3>
+<div class="item"><small>Call / WhatsApp</small><a href="tel:+918828040723">+91 88280 40723</a></div>
+<div class="item"><small>Alternate Number</small><a href="tel:+919372003947">+91 93720 03947</a></div>
+<div class="item"><small>Service Area</small>Mumbai • Dombivli • Maharashtra</div>
+</div>
+<div class="box">
+<h3>Quick Booking</h3>
+<p style="color:#aab4c2;margin-bottom:18px">Tap below and send your trip details directly on WhatsApp.</p>
+<a class="btn primary" style="width:100%;text-align:center" href="https://wa.me/918828040723?text=Hello%20ADITYA%20TOUR'S%20AND%20TRAVELS.%0A%0ADestination:%20%0ATravel%20Date:%20%0ANo.%20of%20Passengers:%20%0APickup%20Location:%20%0A%0AI%20want%20to%20plan%20a%20trip." target="_blank" rel="noopener">Send Booking Enquiry</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<strong>ADITYA TOUR'S AND TRAVELS</strong><br>
+Mumbai • Dombivli • Maharashtra<br>
+© 2026 ADITYA TOUR'S AND TRAVELS. All rights reserved.
+</footer>
+
+<a class="float-wa" href="https://wa.me/918828040723?text=Hello%20ADITYA%20TOUR'S%20AND%20TRAVELS,%20I%20want%20to%20plan%20a%20trip." target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
+
+<script>
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("show");menu.setAttribute("aria-expanded",open)});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("show");menu.setAttribute("aria-expanded","false")}));
+</script>
+</body>
+</html>
