@@ -2,9 +2,7 @@ ADITYA TOUR'S AND TRAVELS — WEBSITE V1
 
 Files:
 - index.html
-- assets/logo.jpg
-- assets/aura.jpg
-- assets/ertiga.jpg
+
 
 To test:
 Open index.html in a browser.
